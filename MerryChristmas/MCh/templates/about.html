@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+about
+{% endblock %}
+
+{% block content %}
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<style>
+    .all{
+        font-family: Arial, sans-serif;
+        display: inline;
+    }
+    h1{
+        font-weight: bold;
+    }
+    img{
+        width: 20%;
+        border-radius: 100%;
+    }
+    .soc{
+        gap: 10px;
+        display: flex;
+    }
+    a{
+        font-size:30px; 
+        color: black;
+        cursor: pointer;
+    }
+    a:hover{
+        top: 10px;
+    }
+</style>
+    <div class="all">
+        <img src="https://sun4-20.userapi.com/impg/IMAaZvtU83vJygqqvIzLsMJGOqRpTYNrEoWpoQ/QcSHHndDK3U.jpg?size=1620x2160&quality=95&sign=4fee15bcb8d28e9e64278f31579a7286&type=album" alt="">
+        <h1>Расимка</h1>
+        <div class="about">
+            <p>хомяк</p>
+        </div>
+        <div class="soc">
+            <a href="https://t.me/rasssima_g"><i class='fa fa-telegram'></i></a>
+            <a href="https://vk.com/i_love_youhave"><i class="fa fa-vk"></i></a>
+            <a href="https://github.com/raskaGU"><i class='fa fa-github'></i></a>
+        </div>
+    </div>
+{% endblock %}

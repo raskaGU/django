@@ -1,19 +1,18 @@
-{% extends 'base.html' %}
+{% extends 'base.html'%}
 
-{% block title%}
-Создание поста
-{% endblock%}
+{% block title %}
+Создание постов
+{% endblock %}
 
-{% block content%}
-<div class="container">
-    <h1>Создать пост!</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{form.title}}
-        <br>
-        {{form.post}}
-        <br>
-        <button type="submit" class="btn btn-success">Добавить</button>
-    </form>
-</div>
-{% endblock%}
+{% block content %}
+<h1>Создание постов</h1>
+<form method="post">
+  {% csrf_token %}
+  {{form.title}}
+  <br>
+  {{form.post}}
+  <br>
+  <button type="submit" class="btn btn-success">Добавить</button>
+</form>
+
+{% endblock %}
